@@ -1,0 +1,88 @@
+.h1
+{
+    text-align: center;
+    color: #151515;
+    padding-top: 30px;
+    letter-spacing: 0.10em;/*设置字符间距*/
+    font-size: 3.5em;/*设置字体大小*/
+    font-weight: 600;/*设置字体粗细*/
+}
+/*********************************************************************************/
+/* 全局中心布局 Styles                                                            */
+/*********************************************************************************/
+.global_main
+{
+    position: relative;
+    /*min-height: 1000px;*/
+    /*height: auto;*/
+    height: 100%;
+    width: 100%;
+}
+/*********************************************************************************/
+/* 头部div Styles                                                                */
+/*********************************************************************************/
+/*主内容题头*/
+.header_main
+{
+    position: absolute;/*绝对定位：流体属性*/
+    top:50px;
+    /*border:1px solid #151515;*/
+    height:130px;
+    width: 100%;
+}
+/*********************************************************************************/
+/* 操作div Styles                                                                */
+/*********************************************************************************/
+.action_main
+{
+    position: absolute;/*绝对定位：流体属性*/
+    top:180px;
+    /*border:1px solid #151515;*/
+    height:100px;
+    width: 100%;
+    align-self: center;
+}
+/*********************************************************************************/
+/* 内容div Styles                                                                */
+/*********************************************************************************/
+.content_main
+{
+    position: absolute;/*绝对定位：流体属性*/
+    top:280px;
+    /*border:1px solid #151515;*/
+    min-height: 800px;
+    height:auto;
+    width: 100%;
+    align-self: center;
+}
+
+.action_main table,
+.content_main table
+{
+    margin: 20px auto;/*设置居中属性*/
+    min-width: 300px;
+    /*border: 1px solid #151515;*/
+}
+
+.action_main table
+{
+    text-align: center;
+}
+/*********************************************************************************/
+/* a标签 Styles                                                                  */
+/*********************************************************************************/
+
+.action_main a
+{
+    font-size: 28px;
+    font-weight: 300;
+    color: #00CCFF;
+    font-family: "STXingkai";
+}
+
+.action_main a:hover
+{
+    font-size: 28px;
+    font-weight: 500;
+    color: #151515;
+}

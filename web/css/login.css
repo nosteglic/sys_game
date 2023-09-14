@@ -1,0 +1,146 @@
+/*********************************************************************************/
+/* 全局中心布局 Styles                                                            */
+/*********************************************************************************/
+#global_main
+{
+    position: relative;
+    min-height: 600px;
+    height: auto;
+    width: 100%;
+}
+/*********************************************************************************/
+/* 左侧布局 Styles                                                                */
+/*********************************************************************************/
+#content_main_left
+{
+    position: absolute;/*绝对定位：流体属性*/
+    border:1px solid #151515;
+    top:50px;
+    left:220px;
+    height:500px;
+    width:600px;
+}
+/*左侧登录题头*/
+#header_main
+{
+    position: absolute;/*绝对定位：流体属性*/
+    /*border:1px solid #151515;*/
+    top:50px;
+    left:20px;
+    height:100px;
+    width:550px;
+}
+/*左侧登录题头  的登录标题属性*/
+#header_main h1
+{
+    position:absolute;
+    left: 80px;
+    color: #151515;
+    letter-spacing: 0.10em;/*设置字符间距*/
+    font-size: 3.5em;/*设置字体大小*/
+    font-weight: 600;/*设置字体粗细*/
+}
+/*左侧登录内容*/
+#content_main_left_text
+{
+    position: absolute;/*绝对定位：流体属性*/
+    /*border:1px solid #151515;*/
+    top:150px;
+    left:20px;
+    height:280px;
+    width:550px;
+}
+
+#content_main_left_text table
+{
+    position: absolute;/*绝对定位：流体属性*/
+    top:20px;
+}
+/*左侧登录按钮*/
+#content_main_left_action
+{
+    position: absolute;/*绝对定位：流体属性*/
+    /*border:1px solid #151515;*/
+    top:430px;
+    left:20px;
+    height:50px;
+    width:550px;
+}
+
+
+#content_main_left a
+{
+    text-decoration: none;
+}
+
+/*********************************************************************************/
+/* 右侧布局 Styles                                                                */
+/*********************************************************************************/
+#content_main_right
+{
+    border:1px solid #151515;
+    position: absolute;/*绝对定位：流体属性*/
+    top:50px;
+    left:880px;
+    height:500px;
+    width:400px;
+}
+/*右侧logo*/
+#content_main_right_logo
+{
+    /*border:1px solid #151515;*/
+    position: absolute;/*绝对定位：流体属性*/
+    top:50px;
+    left:50px;
+    height:300px;
+    width:300px;
+}
+/*右侧logo 的图片属性*/
+#content_main_right_logo img.big_icon
+{
+    position:absolute;
+    left:50px;
+    border: 0px;/*图片边框*/
+    width: 200px;/*图片宽度*/
+    height: 200px;/*图片高度*/
+}
+/*右侧logo 的文本属性*/
+#content_main_right_logo input[type="text"]
+{
+    position:absolute;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 20px;
+    text-align: right;
+    background: none;
+    border: none;
+    top:250px;
+    color:#458f0b;
+    width: 180px;/*图片宽度*/
+    height: 50px;/*图片高度*/
+}
+#content_main_right_logo img.small_icon
+{
+    position:absolute;
+    top:260px;
+    left:180px;
+    border: 0px;/*图片边框*/
+    width: 25px;/*图片宽度*/
+    height: 25px;/*图片高度*/
+}
+/*右侧注册按钮*/
+#content_main_right_action
+{
+    /*border:1px solid #151515;*/
+    position: absolute;/*绝对定位：流体属性*/
+    bottom:25px;
+    left:50px;
+    height:100px;
+    width:300px;
+}
+/*右侧注册按钮 按钮属性*/
+#content_main_right_action input[type="button"]
+{
+    position: absolute;/*绝对定位：流体属性*/
+    top:25px;
+    left:100px;
+}

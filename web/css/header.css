@@ -1,0 +1,240 @@
+html, body
+{
+    height: 100%;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background: #ffffff url(../img/bg.png) repeat;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12pt;
+    font-weight: 300;
+    color: rgba(255,255,255,0.4);
+}
+/*标题*/
+h1, h2, h3
+{
+    margin: 0;
+    padding: 0;
+    color: #151515;
+}
+a
+{
+    text-decoration:none;
+}
+.container
+{
+    /*overflow: hidden;*/
+    margin: 0 auto;
+    width: 1000px;
+}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+#header-wrapper
+{
+    /*background: #458f0b url(../img/bg.png) repeat;*/
+    background: #3CB371 url(../img/bg.png) repeat;
+}
+
+#header
+{
+    position: relative;/*相对定位*/
+    padding: 4em 0;/*上下填充*/
+}
+
+/*********************************************************************************/
+/* Login_bar Styles                                                              */
+/*********************************************************************************/
+#login_bar
+{
+    padding-right: 50px;
+    font-size: 18px;
+    /*background: #458f0b url(../img/bg.png) repeat;*/
+    background: #3CB371 url(../img/bg.png) repeat;
+}
+#login_bar a
+{
+    color:#ffffff;
+    text-decoration:none;
+    font-weight: bold;
+    width: 100px;
+
+}
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+#logo
+{
+    position: absolute;/*绝对定位：流体属性*/
+    top: 1em;
+    left: 0;
+}
+
+#logo h1
+{
+    position:absolute;
+    padding: 0.20em 0.50em;/*容器的内边距空白*/
+    letter-spacing: 0.10em;/*设置字符间距*/
+    font-size: 2em;/*设置字体大小*/
+    font-weight: 600;/*设置字体粗细*/
+    left:50px;
+}
+
+#logo a
+{
+    text-decoration: none;/*一般用于清除超链接的下划线*/
+    text-transform: uppercase;/*用于设置大写*/
+    color: #FFF;/*字体颜色：白色*/
+}
+/** 重置图片元素 **/
+img
+{
+    position:absolute;
+    border: 0px;/*图片边框*/
+    width: 50px;/*图片宽度*/
+    height: 50px;/*图片高度*/
+}
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+#menu
+{
+    font-size: 16px;
+    text-align: left;
+    position: absolute;
+    top:10px;
+    right:200px;
+    /*overflow: hidden;*/
+}
+.menu1
+{
+    width:130px;
+    height:auto;
+    margin:0px 0px;
+    border:1px solid #9cdd75;
+    background-color:#f1fbec;
+    color: #151515;
+    color:#336601;
+    cursor:hand;/*设置鼠标为手形*/
+    padding:0px 0px ;
+    overflow-y:hidden;/*div溢出内容隐藏*/
+}
+.menu2
+{
+    width:120px;
+    height:20px;
+    margin:0px 0px;
+    color:#ffffff;
+    padding:0px 0px;
+    overflow-y:hidden;
+}
+
+.list
+{
+    line-height:20px;/*行高*/
+    text-align:left;/*文本位置*/
+    padding:4px;/*内距*/
+    font-weight:normal;/*字体粗细*/
+}
+#menu ul
+{
+    margin:0px;
+    padding-left:20px;
+}
+#menu li
+{
+    display:inline;
+    list-style:none;
+    font-weight:bold;
+    float:left;
+}
+
+/*查看a链接样式*/
+#menu a:visited,#menu a:link
+{
+    color:#151515;/*字体颜色*/
+    text-decoration:none;/*清除超链接的默认下划线*/
+    float:left;/*这条最重要，要将几条li水平显示*/
+    width:100px;
+}
+/*鼠标放在子菜单上的样式*/
+#menu a:hover
+{
+    color:white;
+    float:left;
+    width:120px;
+    text-decoration:none;
+    /*background-color: #67bb34;*/
+    background-color: #9f80e2;
+}
+
+
+
+
+
+/*********************************************************************************/
+/* 底部著作权信息                                                                 */
+/*********************************************************************************/
+#footer-wrapper {
+    padding: 4rem 0 2rem 0;/*内边距*/
+    background: #151515 url(../img/bg.png) repeat;/*背景色*/
+    text-align: center;
+    /*position: relative;!*相对定位*!*/
+    /*position: absolute;*/
+    /*bottom: 0px;!*距底部为0*!*/
+    /*height: 100px;*/
+    /*width: 100%;!*适应页面宽度*!*/
+}
+
+#footer-wrapper a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#footer-wrapper a:hover {
+    color: #FFF;
+}
+
+#footer-wrapper.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer-wrapper .copyright {
+    color: #bbb;
+    font-size: 0.9rem;
+    margin: 0 0 2rem 0;
+    padding: 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 736px) {
+
+    #footer {
+        padding: 3rem 0 1rem 0;
+    }
+
+}
+/*位置*/
+ul.icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.icons li {
+    display: inline-block;
+    padding: 0 1rem 0 0;
+}
+
+ul.icons li:last-child {
+    padding-right: 0;
+}
+
+ul.icons li .icon:before {
+    font-size: 2rem;
+}

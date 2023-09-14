@@ -1,0 +1,110 @@
+/*********************************************************************************/
+/* 默认样式                                                                       */
+/*********************************************************************************/
+html, body
+{
+	height: 100%;
+}
+body
+{
+	margin: 0;
+	padding: 0;
+	background: #ffffff url(../img/bg.png) repeat;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 12pt;
+	font-weight: 300;
+	color: rgba(255,255,255,0.4);
+}
+/*标题*/
+h1, h2, h3
+{
+	margin: 0;
+	padding: 0;
+	color: #151515;
+}
+p, ol,ul {
+	margin: 2px 0 22px 17px;
+}
+
+ul li {
+	list-style-type: circle;
+	margin: 0 0 6px 0;
+	padding: 0 0 4px 5px;
+	line-height: 1.5em;
+}
+
+ol, ul
+{
+	padding: 0;
+	list-style: none;
+}
+
+p
+{
+	line-height: 180%;
+}
+
+a
+{
+	color: #4da00c;
+	text-decoration: none;
+}
+/*********************************************************************************/
+/* 输入框input                                                                    */
+/*********************************************************************************/
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="file"],
+select,
+textarea {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	border-radius: 2px;
+	border: none;
+	border: solid 1px;
+	color: inherit;/*继承块中的颜色*/
+	font-size: 20px;
+	display: block;
+	outline: 0;
+	padding: 0 1rem;/*内边距*/
+	text-decoration: none;/*去掉默认下划线*/
+	min-width: 100px;/*默认宽度*/
+	width:auto;
+	background: rgba(144, 144, 144, 0.25);/*背景色*/
+	border-color: rgba(144, 144, 144, 0.25);/*边框颜色*/
+}
+/*内容非法时*/
+input[type="text"]:invalid,
+input[type="password"]:invalid,
+input[type="email"]:invalid,
+input[type="file"]:invalid,
+select:invalid,
+textarea:invalid {
+	box-shadow: none;/*无阴影*/
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="file"],
+select {
+	height: 2.75rem;
+}
+textarea {
+	height: 100%;
+	padding: 0.75rem 1rem;
+}
+/*文本框获取焦点*/
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="file"]:focus,
+select:focus,
+textarea:focus {
+	border-color: #089b27;
+	box-shadow: 0 0 0 1px #089b27;
+}
+

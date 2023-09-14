@@ -1,0 +1,153 @@
+/*h1、h2标题属性*/
+.h1
+{
+    text-align: center;
+    color: #151515;
+    letter-spacing: 0.10em;/*设置字符间距*/
+    font-size: 4.5em;/*设置字体大小*/
+    font-weight: 600;/*设置字体粗细*/
+    font-family:  "KaiTi";
+}
+.h2
+{
+    text-align: center;
+    color: #151515;
+    letter-spacing: 0.10em;/*设置字符间距*/
+    font-size: 2.5em;/*设置字体大小*/
+    font-weight: 400;/*设置字体粗细*/
+}
+/*----------------------------------------------------游戏详情区------------------------------------------------------------------*/
+/*********************************************************************************/
+/* 全局中心布局 Styles                                                            */
+/*********************************************************************************/
+#global_main
+{
+    position: relative;
+    margin: 20px 150px;
+    border-top:1px solid #151515;
+    border-left:1px solid #151515;
+    border-right:1px solid #151515;
+    height: 250%;
+}
+/*********************************************************************************/
+/* 头部标题 Styles                                                                */
+/*********************************************************************************/
+#game_header_main
+{
+    position: absolute;/*绝对定位：流体属性*/
+    top:20px;
+    /*border:1px solid #151515;*/
+    height:80px;
+    width: 100%;
+}
+/*********************************************************************************/
+/* 游戏详情表:游戏id，名称，类型，设计者等除游戏介绍外的信息显示 Styles                */
+/*********************************************************************************/
+#content_main_table
+{
+    position: absolute;/*绝对定位：流体属性*/
+    top:100px;
+    /*border:1px solid #151515;*/
+    height: 500px;
+    width: 100%;
+}
+/*相关属性字体大小、背景色*/
+#content_main_table input[type="text"],
+textarea
+{
+    font-size: 20px;
+    background: rgba(144, 144, 144, 0.07) url(../img/bg.png);
+    resize:none;/*禁止拖动，固定其大小，主要针对textarea*/
+}
+#content_main_table input[readonly],
+textarea[readonly]
+{
+    font-size: 20px;
+    background: #ffffff;
+    resize:none;/*禁止拖动，固定其大小，主要针对textarea*/
+}
+#content_main_table table
+{
+    margin: 50px auto;/*设置居中属性*/
+    font-size: 20px;
+    color: #151515;
+}
+#content_main_table td
+{
+    min-width: 180px;
+}
+/*********************************************************************************/
+/* 加入购物车按钮，返回 Styles                                                     */
+/*********************************************************************************/
+#action_main
+{
+    position: absolute;/*绝对定位：流体属性*/
+    top:600px;
+    right: 50px;
+    /*border:1px solid #151515;*/
+    height: 60px;
+}
+
+#action_main td
+{
+    min-width: 200px;
+}
+#action_main a
+{
+    font-size: 28px;
+    font-weight: 300;
+    color: #00CCFF;
+    font-family: "STXingkai";
+}
+
+#action_main a:hover
+{
+    font-size: 28px;
+    font-weight: 500;
+    color: #151515;
+}
+/*********************************************************************************/
+/* 评论内容  Styles                                                               */
+/*********************************************************************************/
+#comment_content
+{
+    position: absolute;/*绝对定位：流体属性*/
+    top:660px;
+    border-top:1px solid #151515;
+    height: 280px;
+    width: 100%;
+}
+#comment_content textarea,
+#comment_content input[type="text"]
+{
+    font-size: 16px;
+}
+#comment_content input[type="text"]
+{
+    width: 620px;
+}
+#comment_content table,
+#comment_content td
+{
+    font-size: 16px;
+    border: none;
+    margin: 0 auto;
+    background: #ffffff url(../img/bg.png) repeat;
+}
+/*********************************************************************************/
+/* 显示其他用户的评论 Styles                                                       */
+/*********************************************************************************/
+#comment_list
+{
+    position: absolute;/*绝对定位：流体属性*/
+    top:940px;
+    /*border-bottom:1px solid #151515;*/
+    height: auto;
+    width: 100%;
+}
+#comment_list table
+{
+    margin: 50px auto;/*设置居中属性*/
+    min-width: 900px;
+}
+

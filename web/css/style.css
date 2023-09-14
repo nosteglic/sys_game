@@ -1,0 +1,177 @@
+﻿@charset "UTF-8";
+/*********************************************************************************/
+/* 一种表格的样式                                                                  */
+/*********************************************************************************/
+.gradient-style
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 15px;/*字体大小*/
+	margin: 45px;
+	min-width: 500px;
+	width: auto;/*宽度自动*/
+	border-collapse: collapse;/*表格的两边框合并为一条*/
+}
+/*表格题头*/
+.gradient-style th
+{
+	font-size: 18px;/*字体大小*/
+	font-weight:bold;/*字体粗细*/
+	padding: 8px;/*内边距*/
+	background: #e8edff  repeat-x;/*背景色*/
+	border-top: 2px solid rgb(127, 127, 127);/*边框*/
+	border-bottom: 1px solid rgb(127, 127, 127);
+	color: #039;/*字体颜色*/
+	min-width: 150px;/*最小宽度*/
+	width:auto;/*宽度自动*/
+}
+.gradient-style td
+{
+	font-weight:normal;
+	padding: 8px;
+	border-bottom: 1px solid rgb(127, 127, 127);
+	border-top: 1px solid rgb(127, 127, 127);
+	background: #fff  repeat-x;
+	color: #339;
+	min-width: 150px;
+	width:auto;/*宽度自动*/
+}
+.gradient-style tfoot tr td
+{
+	background: #e8edff;
+	font-size: 12px;
+	color: #339;
+	border-bottom: 2px solid rgb(127, 127, 127);
+}
+/*当鼠标在条目上时的颜色*/
+.gradient-style tbody tr:hover td
+{
+	background: #d0dafd  repeat-x;
+	color: #151515;
+}
+/*表格边框*/
+.gradient-style td:first-child,.gradient-style th:first-child{
+	border-left: 2px solid rgb(127, 127, 127);
+}
+.gradient-style td:last-child,.gradient-style th:last-child{
+	border-right: 2px solid rgb(127, 127, 127);
+}
+/*********************************************************************************/
+/* 表格设置                                                                        */
+/*********************************************************************************/
+/*只读文本框*/
+.gradient-style input[readonly],
+.gradient-style input[unselectable="on"]
+{
+	background-color: #ffffff;
+	border: none;
+}
+
+/*********************************************************************************/
+/* 按钮正常样式                                                                   */
+/*********************************************************************************/
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	border-radius: 2px;
+	border: 0;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
+	font-weight:300;
+	height: 2.5rem;
+	line-height: 2.95rem;
+	padding: 0 1.5rem;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;/*设置英文字母为大写*/
+	white-space: nowrap;
+}
+/*********************************************************************************/
+/* 按钮.special Styles                                                           */
+/*********************************************************************************/
+/*按钮正常状态*/
+input[type="submit"].special,
+input[type="reset"].special,
+input[type="button"].special,
+button.special,
+.button.special {
+	/*background-color: #089b27;*/
+	background-color: #FFF033 	;
+	color: #151515;
+}
+/*鼠标滑过按钮状态*/
+input[type="submit"].special:hover,
+input[type="reset"].special:hover,
+input[type="button"].special:hover,
+button.special:hover,
+.button.special:hover {
+	/*background-color: #08691b;*/
+	background-color: #FFD400;
+	color: #151515;
+}
+/*点击按钮状态*/
+input[type="submit"].special:active,
+input[type="reset"].special:active,
+input[type="button"].special:active,
+button.special:active,
+.button.special:active {
+	/*background-color: #044f10;*/
+	color: #151515;
+}
+/*********************************************************************************/
+/* 按钮.cancel Styles                                                            */
+/*********************************************************************************/
+input[type="button"].cancel {
+	/*background-color: #a50607;*/
+	background-color: #FF3300;
+	color: #ffffff !important;
+}
+
+input[type="button"].cancel:hover {
+	/*background-color: #8e0607;*/
+	background-color: #CC3300;
+	color: #ffffff;
+}
+
+input[type="button"].cancel:active {
+	/*background-color: #5f0203;*/
+	color: #ffffff;
+}
+/*********************************************************************************/
+/* Page分页 Styles                                                            */
+/*********************************************************************************/
+.page_style
+{
+	position: absolute;
+	right: 50px;
+	bottom: 10px;
+
+}
+.page_style a
+{
+	color: #0da827;
+	font-weight: 300;
+}
+
+.page_style a:hover
+{
+	color: #151515;
+	font-weight: bold;
+}
+.page_style label
+{
+	color: #0da827;
+	font-size: 18px;
+	font-weight: bold;
+}
+

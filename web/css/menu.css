@@ -1,0 +1,364 @@
+/*h1标题属性*/
+.h1
+{
+    text-align: center;
+    color: #151515;
+    letter-spacing: 0.10em;/*设置字符间距*/
+    font-size: 3.5em;/*设置字体大小*/
+    font-weight: 600;/*设置字体粗细*/
+}
+.h2
+{
+    text-align: center;
+    color: #151515;
+    letter-spacing: 0.10em;/*设置字符间距*/
+    font-size: 2.5em;/*设置字体大小*/
+    font-weight: 400;/*设置字体粗细*/
+}
+.h4
+{
+    text-align: left;
+    color: #151515;
+    letter-spacing: 0.10em;/*设置字符间距*/
+    font-size: 1.5em;/*设置字体大小*/
+    font-weight: 400;/*设置字体粗细*/
+}
+/*a 标签属性*/
+a
+{
+    color: #4da00c;
+    text-decoration: none;
+}
+/*-------------------------------------------------------menuAdmin----------------------------------------------------------------*/
+/*********************************************************************************/
+/* 全局中心布局 Styles                                                            */
+/*********************************************************************************/
+#global_main
+{
+    position: relative;
+    border:1px solid #151515;
+    min-height: 900px;
+    height:auto;
+    width: 100%;
+}
+/*********************************************************************************/
+/* 左侧：管理用户 Styles                                                                */
+/*********************************************************************************/
+#admin_user
+{
+    position: absolute;/*绝对定位：流体属性*/
+    border:1px solid #151515;
+    top:50px;
+    left:50px;
+    min-height:830px;
+    height: auto;
+    width:400px;
+}
+/*用户管理头部*/
+#user_header_main
+{
+    position: absolute;/*绝对定位：流体属性*/
+    /*border:1px solid #151515;*/
+    top:0px;
+    min-height:120px;
+    width:400px;
+}
+
+/*用户管理链接*/
+#admin_user_action
+{
+    position: absolute;/*绝对定位：流体属性*/
+    /*border:1px solid #151515;*/
+    top:170px;
+    min-height:120px;
+    width:300px;
+    font-family:  "KaiTi";
+    padding: 0px 50px;
+}
+
+#admin_user_action a
+{
+    font-size: 36px;
+}
+#admin_user_action a:hover
+{
+    color: black;
+    font-weight: bold;
+}
+#admin_user_action img
+{
+    position:absolute;
+    left:100px;
+    border: 0px;/*图片边框*/
+    width: 200px;/*图片宽度*/
+    height: 200px;/*图片高度*/
+}
+
+/*********************************************************************************/
+/* 管理游戏 Styles                                                                */
+/*********************************************************************************/
+/*右侧：管理游戏*/
+#admin_game
+{
+    position: absolute;/*绝对定位：流体属性*/
+    border:1px solid #151515;
+    top:50px;
+    left:500px;
+    min-height:830px;
+    height: auto;
+    width:1000px;
+}
+/*游戏管理标题*/
+#game_header_main
+{
+    position: absolute;/*绝对定位：流体属性*/
+    /*border:1px solid #151515;*/
+    top:0px;
+    height:70px;
+    width:1000px;
+}
+/*管理员的搜索功能*/
+#game_query
+{
+    position: absolute;/*绝对定位：流体属性*/
+    /*border:1px solid #151515;*/
+    top:70px;
+    min-height:160px;
+    height: auto;
+    width:1000px;
+}
+#game_query input[type="text"]
+{
+    position: absolute;/*绝对定位：流体属性*/
+    top:20px;
+    width: 300px;
+    height: 70px;
+    color: black;
+    font-size: 20px;
+
+}
+#game_query input[type="button"]
+{
+    position: absolute;/*绝对定位：流体属性*/
+    width: 100px;
+    top:100px;
+    left:100px;
+}
+/*管理员的搜索功能---根据游戏ID搜索*/
+#game_queryById
+{
+    position: absolute;/*绝对定位：流体属性*/
+    /*border:1px solid #151515;*/
+    top:0px;
+    left: 20px;
+    height:200px;
+    width:300px;
+}
+/*管理员的搜索功能---根据游戏名搜索*/
+#game_queryByName
+{
+    position: absolute;/*绝对定位：流体属性*/
+    /*border:1px solid #151515;*/
+    top:0px;
+    left: 340px;
+    height:200px;
+    width:300px;
+}
+/*管理员的搜索功能---根据游戏开发者搜索*/
+#game_queryByProducer
+{
+    position: absolute;/*绝对定位：流体属性*/
+    /*border:1px solid #151515;*/
+    top:0px;
+    left: 660px;
+    height:200px;
+    width:300px;
+}
+/*显示游戏列表*/
+#game_showList
+{
+    position: absolute;/*绝对定位：流体属性*/
+    /*border:1px solid #151515;*/
+    top:230px;
+    min-height:300px;
+    height: auto;
+    width:1000px;
+}
+
+#game_showList table
+{
+    min-width: 900px;
+    font-size: 20px;
+}
+/*-------------------------------------------------------menuUser----------------------------------------------------------------*/
+/*********************************************************************************/
+/* 左侧logo+分类+开发者 Styles                                                    */
+/*********************************************************************************/
+/*左侧*/
+#content_main_left
+{
+    position: absolute;/*绝对定位：流体属性*/
+    border:1px solid #151515;
+    top:50px;
+    left:50px;
+    min-height:800px;
+    height: auto;
+    width:300px;
+}
+
+/*左侧logo */
+#content_main_left_logo
+{
+    position: absolute;/*绝对定位：流体属性*/
+    /*border:1px solid #151515;*/
+    top:0px;
+    left:120px;
+    height:80px;
+    width:300px;
+}
+/*左侧logo 图片属性*/
+#content_main_left_logo img
+{
+    position:absolute;
+    left:0px;
+    border: 0px;/*图片边框*/
+    height: 80px;/*图片高度*/
+}
+
+/*左侧分类栏*/
+#content_main_left_class
+{
+    position: absolute;/*绝对定位：流体属性*/
+    border-bottom:1px solid #151515;
+    top:80px;
+    left:0px;
+    height:400px;
+    width:300px;
+}
+#content_main_left_class a
+{
+    font-weight: 300;
+}
+#content_main_left_class a:hover
+{
+    color: black;
+    font-weight: bold;
+}
+/*左侧开发者相关链接*/
+#producer_action
+{
+    position: absolute;/*绝对定位：流体属性*/
+    /*border:1px solid #151515;*/
+    top:480px;
+    left:50px;
+    height:320px;
+    width:300px;
+}
+#producer_action a
+{
+    font-size: 28px;
+    font-weight: 500;
+    color: #8e0607;
+    font-family: "KaiTi";
+    /*border: 1px solid #67bb34;*/
+}
+
+#producer_action a:hover
+{
+    color: black;
+    font-weight: bold;
+}
+#producer_action h2
+{
+    text-align: left;
+    margin: 80px 0 0 0;
+}
+#producer_action img
+{
+    margin: 0 60px;
+    border: 0px;/*图片边框*/
+    height: 80px;/*图片高度*/
+    width: 80px;
+}
+#producer_action label,
+#admin_user_action label
+{
+    color: #151515;
+    font-size: 20px;
+    font-family: "宋体";
+}
+/*********************************************************************************/
+/* 右侧搜索+游戏显示 Styles                                                       */
+/*********************************************************************************/
+/*右侧*/
+#content_main_right
+{
+    position: absolute;/*绝对定位：流体属性*/
+    border:1px solid #151515;
+    top:50px;
+    left:400px;
+    min-height:800px;
+    height: auto;
+    width:1100px;
+}
+
+/*右侧搜索框*/
+#content_main_right_query
+{
+    position: absolute;/*绝对定位：流体属性*/
+    /*border:1px solid #151515;*/
+    top:50px;
+    left:180px;
+    height:100px;
+    width:1100px;
+}
+/*右侧搜索框 输入框属性*/
+#content_main_right_query input[type="text"]
+{
+    width: 600px;
+    height: 70px;
+    color: black;
+    font-size: 20px;
+    position: absolute;/*绝对定位：流体属性*/
+    left:50px;
+    top:20px;
+}
+/*右侧搜索框 按钮属性*/
+#content_main_right_query input[type="button"]
+{
+    height: 70px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;/*绝对定位：流体属性*/
+    top:20px;
+    left:650px;
+}
+/*右侧游戏列表标题*/
+#header_main
+{
+    position: absolute;/*绝对定位：流体属性*/
+    /*border:1px solid #151515;*/
+    top:150px;
+    text-align: center;
+    height:100px;
+    width:1100px;
+}
+
+/*右侧游戏列表*/
+#game_list_main
+{
+    position: absolute;/*绝对定位：流体属性*/
+    /*border:1px solid #151515;*/
+    top:250px;
+    left:0px;
+    min-height:250px;
+    height: auto;
+    width: 1100px;
+}
+#game_list_main table
+{
+    min-width: 1000px;
+    font-size: 20px;
+}
+

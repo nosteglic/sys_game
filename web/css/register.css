@@ -1,0 +1,124 @@
+.h1
+{
+    text-align: center;
+    color: #151515;
+    height: 130px;
+    padding-top: 30px;
+    letter-spacing: 0.10em;/*设置字符间距*/
+    font-size: 3.5em;/*设置字体大小*/
+    font-weight: 600;/*设置字体粗细*/
+}
+/*********************************************************************************/
+/* 全局中心布局 Styles                                                            */
+/*********************************************************************************/
+#global_main
+{
+    position: relative;
+    min-height: 1100px;
+    height:auto;
+    width: 100%;
+}
+/*********************************************************************************/
+/* 内部div Styles                                                                */
+/*********************************************************************************/
+/*主内容题头*/
+#header_main
+{
+    position: absolute;/*绝对定位：流体属性*/
+    top:50px;
+    left:450px;
+    border-top:1px solid #151515;
+    border-left:1px solid #151515;
+    border-right:1px solid #151515;
+    min-height:130px;
+    height: auto;
+    width: 600px;
+}
+
+/*主内容核心*/
+#content_main
+{
+    position: absolute;/*绝对定位：流体属性*/
+    top:180px;
+    left:450px;
+    border-left:1px solid #151515;
+    border-right:1px solid #151515;
+    min-height:520px;
+    height: auto;
+    width: 600px;
+}
+/*主内容功能区*/
+#action_main
+{
+    position: absolute;/*绝对定位：流体属性*/
+    top:700px;
+    left:450px;
+    border-bottom:1px solid #151515;
+    border-left:1px solid #151515;
+    border-right:1px solid #151515;
+    min-height:100px;
+    height: auto;
+    width: 600px;
+}
+
+#space1
+{
+    position: absolute;/*绝对定位：流体属性*/
+    left:120px;
+}
+#space2
+{
+    position: absolute;/*绝对定位：流体属性*/
+    left:330px;
+}
+
+
+
+
+/*********************************************************************************/
+/* 购物车div Styles                                                                */
+/*********************************************************************************/
+#shoppingCart_header
+{
+    position: absolute;/*绝对定位：流体属性*/
+    top:50px;
+    left:0px;
+    /*border:1px solid #151515;*/
+    text-align: center;
+    height:130px;
+    width: 100%;
+}
+/*购物车界面的操作*/
+#shoppingCart_action
+{
+    position: absolute;/*绝对定位：流体属性*/
+    top:180px;
+    left:0px;
+    border-bottom:1px solid #151515;
+    height:100px;
+    width: 100%;
+}
+
+/*购物车界面的物品显示*/
+#shoppingCart_things
+{
+    position: absolute;/*绝对定位：流体属性*/
+    top:280px;
+    left:0px;
+    /*border:1px solid #151515;*/
+    min-height: 600px;
+    height: auto;
+    width: 100%;
+}
+/*表格居中设置*/
+#shoppingCart_action table,
+#shoppingCart_things table
+{
+    margin: 20px auto;
+}
+/*表格最小宽度设置*/
+#shoppingCart_things table
+{
+    min-width: 1000px;
+    font-size: 20px;
+}
